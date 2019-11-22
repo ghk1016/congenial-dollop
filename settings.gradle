@@ -1,0 +1,2 @@
+include ':app', ':mylibrary', ':day1119', ':day11_20'
+rootProject.name='WeiDuYingYuan'

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"></FrameLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#0F1D3C"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:id="@+id/group">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_60"
+                android:text="电影"
+                android:id="@+id/tv1"
+                android:background="@drawable/home_btn"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                android:textColor="#e8185e"
+                android:textSize="18dp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_40"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/dy"
+                android:id="@+id/radiobtn1"
+                android:checked="true"
+                android:button="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_140"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_60"
+                android:text="影院"
+                android:visibility="invisible"
+                android:background="@drawable/home_btn"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                android:id="@+id/tv2"
+                android:textColor="#e8185e"
+                android:textSize="18dp"/>
+            <RadioButton
+                android:id="@+id/radiobtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_155"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/yy"
+                android:button="@null" />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_285"
+                android:paddingRight="@dimen/dp_20"
+                android:paddingLeft="@dimen/dp_60"
+                android:text="我的"
+                android:background="@drawable/home_btn"
+                android:paddingTop="@dimen/dp_9"
+                android:paddingBottom="@dimen/dp_9"
+                android:textColor="#e8185e"
+                android:visibility="invisible"
+                android:textSize="18dp" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/wd"
+                android:layout_marginLeft="@dimen/dp_300"
+                android:layout_marginTop="@dimen/dp_20"
+                android:id="@+id/radiobtn3"
+                android:checked="true"
+                android:button="@null"/>
+
+        </RelativeLayout>
+
+    </RadioGroup>
+</LinearLayout>
